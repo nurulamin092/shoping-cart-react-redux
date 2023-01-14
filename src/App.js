@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Cart from './components/Cart';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="bg-gray-50 h-full md:h-screen">
+    <div className="grid place-items-center">
+        <h1
+            className="text-gray-900 font-bold text-3xl p-10 underline decoration-purple-500 decoration-4 underline-offset-8 mb-4"
         >
-          Learn React
-        </a>
-      </header>
+            Shopping Cart
+        </h1>
     </div>
+  <Cart/>
+</div>
   );
 }
 
